@@ -41,8 +41,10 @@ main()
   gray='#44475a'
   dark_gray='#282a36'
   light_purple='#bd93f9'
-  dark_purple='#6272a4'
-  cyan='#8be9fd'
+  # dark_purple='#6272a4'
+  dark_purple='#6b4bb5'
+  # cyan='#8be9fd'
+  cyan='#9aefff'
   green='#50fa7b'
   orange='#ffb86c'
   red='#ff5555'
@@ -247,7 +249,8 @@ main()
       script="#($current_dir/weather_wrapper.sh $show_fahrenheit $show_location '$fixed_location')"
 
     elif [ $plugin = "time" ]; then
-      IFS=' ' read -r -a colors <<< $(get_tmux_option "@dracula-time-colors" "dark_purple white")
+      # IFS=' ' read -r -a colors <<< $(get_tmux_option "@dracula-time-colors" "dark_purple white")
+      IFS=' ' read -r -a colors <<< $(get_tmux_option "@dracula-time-colors" "orange gray")
       if [ -n "$time_format" ]; then
         script=${time_format}
       else
