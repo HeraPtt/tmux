@@ -42,7 +42,7 @@ main()
   dark_gray='#282a36'
   light_purple='#bd93f9'
   # dark_purple='#6272a4'
-  dark_purple='#6b4bb5'
+  dark_purple='#8a2be2'
   cyan='#8be9fd'
   green='#50fa7b'
   orange='#ffb86c'
